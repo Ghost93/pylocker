@@ -296,7 +296,7 @@ class Locker(object):
             if self.__filePath is None:
                 self.__lockPath = os.path.join(os.getcwd(), ".lock")
             else:
-                self.__lockPath = os.path.join( os.path.dirname(self.__filePath), '.lock')
+                self.__lockPath = '{0}.lock'.format(os.path.abspath(self.__filePath))
 
     def set_timeout(self, timeout):
         """
