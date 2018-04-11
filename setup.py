@@ -78,7 +78,7 @@ DESCRIPTION      = [ LONG_DESCRIPTION[0] + LONG_DESCRIPTION[1] + LONG_DESCRIPTIO
 
 
 ## get package info
-from pylocker import __version__
+from __pkginfo__ import __version__
 
 # create meta data
 metadata = dict(name = PACKAGE_NAME,
